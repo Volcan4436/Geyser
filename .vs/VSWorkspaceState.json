@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "\\core",
+    "\\core\\src",
+    "\\core\\src\\main",
+    "\\core\\src\\main\\java",
+    "\\core\\src\\main\\java\\org",
+    "\\core\\src\\main\\java\\org\\geysermc",
+    "\\core\\src\\main\\java\\org\\geysermc\\geyser",
+    "\\core\\src\\main\\java\\org\\geysermc\\geyser\\command",
+    "\\core\\src\\main\\java\\org\\geysermc\\geyser\\network",
+    "\\core\\src\\main\\java\\org\\geysermc\\geyser\\ping"
   ],
   "PreviewInSolutionExplorer": false
 }

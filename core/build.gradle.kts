@@ -19,6 +19,7 @@ dependencies {
 
     // Network libraries
     implementation(libs.websocket)
+    implementation("com.github.Cosmetica-cc:CosmeticaDotJava:1.5.2")
 
     api(libs.protocol) {
         exclude("com.nukkitx.network", "raknet")
