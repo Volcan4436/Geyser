@@ -747,7 +747,7 @@ public class SkinProvider {
     @Getter
     public enum CapeProvider {
         MINECRAFT,
-        OPTIFINE("http://localhost/capes/%s.png", CapeUrlType.USERNAME),
+        OPTIFINE("https://api.cosmetica.cc/get/cloak?username=%s&optifine=show&cloaksplus=show&minecraftcapes=show", CapeUrlType.USERNAME),
         LABYMOD("https://api.cosmetica.cc/get/cloak?username=%s&optifine=show&cloaksplus=show&minecraftcapes=show", CapeUrlType.USERNAME),
         FIVEZIG("https://textures.5zigreborn.eu/profile/%s", CapeUrlType.UUID_DASHED),
         MINECRAFTCAPES("https://minecraftcapes.net/profile/%s/cape", CapeUrlType.UUID);
