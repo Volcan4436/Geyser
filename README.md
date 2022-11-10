@@ -45,6 +45,11 @@ There are a few things Geyser is unable to support due to various differences be
 2. Navigate to the Geyser root directory and run `git submodule update --init --recursive`. This command downloads all the needed submodules for Geyser and is a crucial step in this process.
 3. Run `gradlew build` and locate to `bootstrap/build` folder.
 
+## Running a cape server
+You can run a custom cape server by cloning this github repo https://github.com/Stardust-kyun/capes and following the instuctions on its readme.
+It will run on port 80 and if you run it on the same machine that the server is running on you won't need to open port 80.
+Bedrock User's will need the cape name to have the bedrock prefix the server is using (check config to see what the prefix is and to change it if you have issues).
+
 ## Contributing
 Any contributions are appreciated. Please feel free to reach out to us on [Discord](http://discord.geysermc.org/) if
 you're interested in helping out with Geyser.
