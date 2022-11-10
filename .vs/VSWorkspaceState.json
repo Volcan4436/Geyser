@@ -1,5 +1,6 @@
 {
   "ExpandedNodes": [
+    "",
     "\\core",
     "\\core\\src",
     "\\core\\src\\main",
@@ -7,9 +8,8 @@
     "\\core\\src\\main\\java\\org",
     "\\core\\src\\main\\java\\org\\geysermc",
     "\\core\\src\\main\\java\\org\\geysermc\\geyser",
-    "\\core\\src\\main\\java\\org\\geysermc\\geyser\\command",
-    "\\core\\src\\main\\java\\org\\geysermc\\geyser\\network",
-    "\\core\\src\\main\\java\\org\\geysermc\\geyser\\ping"
+    "\\core\\src\\main\\java\\org\\geysermc\\geyser\\entity"
   ],
+  "SelectedNode": "\\core\\src\\main\\java\\org\\geysermc\\geyser\\skin\\SkinProvider.java",
   "PreviewInSolutionExplorer": false
 }
