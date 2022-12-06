@@ -505,19 +505,10 @@ public class SkinProvider {
 
         // if the requested image is a cape
         if (provider != null) {
-            if (image.getWidth() > 64 || image.getHeight() > 32) {
-                // Prevent weirdly-scaled capes from being cut off
-                BufferedImage newImage = new BufferedImage(128, 64, BufferedImage.TYPE_INT_ARGB);
-                Graphics g = newImage.createGraphics();
-                g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
-                g.dispose();
-                image.flush();
-                image = scale(newImage, 64, 32);
-            } else if (image.getWidth() < 64 || image.getHeight() < 32) {
-                // Bedrock doesn't like smaller-sized capes, either.
+            if (image.getWidth() != 64 || image.getHeight() != 32) {
                 BufferedImage newImage = new BufferedImage(64, 32, BufferedImage.TYPE_INT_ARGB);
                 Graphics g = newImage.createGraphics();
-                g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
+                g.drawImage(image, 0, 0, 64, 32, 0, 0, image.getWidth(), image.getWidth() / 2, null);
                 g.dispose();
                 image.flush();
                 image = newImage;
@@ -756,8 +747,8 @@ public class SkinProvider {
     @Getter
     public enum CapeProvider {
         MINECRAFT,
-        OPTIFINE("https://optifine.net/capes/%s.png", CapeUrlType.USERNAME),
-        LABYMOD("https://dl.labymod.net/capes/%s", CapeUrlType.UUID_DASHED),
+        OPTIFINE("https://api.cosmetica.cc/get/cloak?username=%s&optifine=show&cloaksplus=show&minecraftcapes=show", CapeUrlType.USERNAME),
+        LABYMOD("https://api.cosmetica.cc/get/cloak?username=%s&optifine=show&cloaksplus=show&minecraftcapes=show", CapeUrlType.USERNAME),
         FIVEZIG("https://textures.5zigreborn.eu/profile/%s", CapeUrlType.UUID_DASHED),
         MINECRAFTCAPES("https://minecraftcapes.net/profile/%s/cape", CapeUrlType.UUID);
 
